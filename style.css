@@ -1,39 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
 * {
     margin: 0;
     border: 0;
     padding: 0;
     box-sizing: 0;
 }
+
 img {
     width: 100%;
     height: auto;
 }
+
+body {
+    background-color: #66490b;
+}
+
 .container {
     margin: 0 150px;
     display: flex;
 }
+
+header {
+    padding: 30px;
+    background-color: #3be43b;
+    border-bottom: #0b660b 5px solid;
+}
+
+.logo-nome {
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+#buscar-input {
+    border-bottom: 5px solid rgb(2, 126, 29);
+    padding: 10px 10px;
+    width: 200px;
+    font-family: 'Rethink Sans', sans-serif;
+    outline: 0;
+    background-color: transparent;
+    color: black;
+}
+
+#buscar button {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 17px;
+    color: white;
+    background-color: #0b660b;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#buscar button:hover {
+    background-color: #071f07d3;
+    transition: 0.3s;
+}
+
+#cont-carrinho {
+    margin-left: 15px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#itens-lista {
+    background-color: transparent;
+    padding: 10px 10px;
+    border-radius: 20px ;
+}
+
+.item span {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+li {
+    list-style-type:none ;
+}
+
+.remove, .add {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    background-color: #b9ff9e;
+    width: 20px;
+    border-radius: 5px;
+}
+
+#preco-total {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.limpa {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #0b660b;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
 #header .container {
     justify-content: space-between;
     align-items: center;
 }
+
+#main {
+    padding-bottom: 50px;
+}
+
 #main .container {
     flex-direction: column;
 }
+
+.nome {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.nome h2 {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+}
+
 .produto-linha {
     display: flex;
     justify-content: space-between;
 }
-input {
-    border: 2px solid black;
-    padding: 5px 7px;
-    border-radius: 8px;
+
+.produto {
+    background-color: #ffffff;
+    width: 250px;
+    text-align: center;
+    margin: 25px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: #025202 5px solid;
 }
+
+.infos h3 {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 19px;
+    color: #000000;
+}
+
+.infos p {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+    border-bottom: #025202 2px solid;
+    margin-bottom: 5px;
+}
+
+.infos button {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: #0b660b;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.infos button:hover {
+    background-color: #071f07d3;
+    transition: 0.3s;
+}
+
 #carrinho-icon img{
     width: 30px;
 }
+
 #carrinho-icon {
     display: flex;
 }
+
 .produto img {
     width: 200px;
     height: 250px;
